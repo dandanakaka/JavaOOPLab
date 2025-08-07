@@ -1,0 +1,29 @@
+2025/08/07 10:13:53 - Application started.
+2025/08/07 10:13:57 - User selected main menu option: 1
+2025/08/07 10:13:58 - User selected currency conversion: 1
+2025/08/07 10:14:11 - Amount entered: 3.5E12
+2025/08/07 10:14:11 - Conversion Result: 3500000000000.00 USD is 292250000000000.00 INR
+2025/08/07 10:14:13 - User selected main menu option: 2
+2025/08/07 10:14:15 - User selected distance conversion: 1
+2025/08/07 10:14:16 - Distance entered: 2.9382893E7
+2025/08/07 10:14:16 - Conversion Result: 29382893.000 meters is 29382.893 kilometers
+2025/08/07 10:14:18 - User selected main menu option: 3
+2025/08/07 10:14:20 - User selected time conversion: 3
+2025/08/07 10:14:22 - Application closing.
+2025/08/07 10:14:27 - Application started.
+2025/08/07 10:14:28 - Application closing.
+2025/08/07 10:14:32 - Application started.
+2025/08/07 10:14:33 - User selected main menu option: 1
+2025/08/07 10:14:34 - User selected currency conversion: 1
+2025/08/07 10:14:41 - Amount entered: 3.5E13
+2025/08/07 10:14:41 - Conversion Result: 35000000000000.00 USD is 2922500000000000.00 INR
+2025/08/07 10:14:44 - User selected main menu option: 2
+2025/08/07 10:14:45 - User selected distance conversion: 1
+2025/08/07 10:14:47 - Distance entered: 1.9829182E7
+2025/08/07 10:14:47 - Conversion Result: 19829182.000 meters is 19829.182 kilometers
+2025/08/07 10:14:48 - User selected main menu option: 3
+2025/08/07 10:14:49 - User selected time conversion: 1
+2025/08/07 10:14:50 - Time value entered: 1289
+2025/08/07 10:14:50 - Conversion Result: 1289 hours is 77340 minutes
+2025/08/07 10:14:54 - User selected main menu option: 4
+2025/08/07 10:14:54 - Application closing.

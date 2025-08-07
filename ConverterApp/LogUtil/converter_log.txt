@@ -1,0 +1,15 @@
+2025/08/07 10:06:49 - Application started.
+2025/08/07 10:06:55 - User selected main menu option: 1
+2025/08/07 10:07:01 - User selected currency conversion: 1
+2025/08/07 10:07:15 - Amount entered: 3.5E11
+2025/08/07 10:07:15 - Conversion Result: 350000000000.00 USD is 29225000000000.00 INR
+2025/08/07 10:07:37 - User selected main menu option: 2
+2025/08/07 10:07:39 - User selected distance conversion: 1
+2025/08/07 10:07:40 - Distance entered: 36736.0
+2025/08/07 10:07:40 - Conversion Result: 36736.000 meters is 36.736 kilometers
+2025/08/07 10:07:44 - User selected main menu option: 3
+2025/08/07 10:07:48 - User selected time conversion: 2
+2025/08/07 10:07:49 - Time value entered: 7387
+2025/08/07 10:07:49 - Conversion Result: 7387 minutes is 123.12 hours
+2025/08/07 10:07:52 - User selected main menu option: 4
+2025/08/07 10:07:52 - Application closing.
