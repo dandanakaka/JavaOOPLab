@@ -1,0 +1,162 @@
+[2025-08-07 23:19:35] [INFO   ] --- Employee Pay Slip Generation System --- 
+[2025-08-07 23:19:35] [INFO   ] 
+Choose Employee Type to Add: 
+[2025-08-07 23:19:35] [INFO   ] 1. Programmer 
+[2025-08-07 23:19:35] [INFO   ] 2. Assistant Professor 
+[2025-08-07 23:19:35] [INFO   ] 3. Associate Professor 
+[2025-08-07 23:19:35] [INFO   ] 4. Professor 
+[2025-08-07 23:19:35] [INFO   ] 5. Finish and Generate Pay Slips 
+[2025-08-07 23:19:35] [INFO   ] Enter your choice:  
+[2025-08-07 23:19:42] [INFO   ] USER INPUT: 4 (Professor) 
+[2025-08-07 23:19:42] [INFO   ] 
+Enter details for the Professor: 
+[2025-08-07 23:19:42] [INFO   ] Enter Name:  
+[2025-08-07 23:19:49] [INFO   ] USER INPUT: John Durairaj 
+[2025-08-07 23:19:49] [INFO   ] Enter Employee ID:  
+[2025-08-07 23:19:51] [INFO   ] USER INPUT: 2981 
+[2025-08-07 23:19:51] [INFO   ] Enter Address:  
+[2025-08-07 23:19:54] [INFO   ] USER INPUT: Wallahi 
+[2025-08-07 23:19:54] [INFO   ] Enter Mail ID:  
+[2025-08-07 23:19:58] [INFO   ] USER INPUT: 920390239@sdkj.com 
+[2025-08-07 23:19:58] [INFO   ] Enter Mobile No:  
+[2025-08-07 23:20:00] [INFO   ] USER INPUT: 28392389283 
+[2025-08-07 23:20:00] [INFO   ] Enter Basic Pay (e.g., 60000):  
+[2025-08-07 23:20:03] [INFO   ] USER INPUT: 9248982.0 
+[2025-08-07 23:20:03] [INFO   ] -> Employee 'John Durairaj' added successfully. 
+[2025-08-07 23:20:03] [INFO   ] 
+Choose Employee Type to Add: 
+[2025-08-07 23:20:03] [INFO   ] 1. Programmer 
+[2025-08-07 23:20:03] [INFO   ] 2. Assistant Professor 
+[2025-08-07 23:20:03] [INFO   ] 3. Associate Professor 
+[2025-08-07 23:20:03] [INFO   ] 4. Professor 
+[2025-08-07 23:20:03] [INFO   ] 5. Finish and Generate Pay Slips 
+[2025-08-07 23:20:03] [INFO   ] Enter your choice:  
+[2025-08-07 23:20:14] [INFO   ] USER INPUT: 2 (Assistant Professor) 
+[2025-08-07 23:20:14] [INFO   ] 
+Enter details for the Assistant Professor: 
+[2025-08-07 23:20:14] [INFO   ] Enter Name:  
+[2025-08-07 23:20:27] [INFO   ] USER INPUT: Pedro Neto 
+[2025-08-07 23:20:27] [INFO   ] Enter Employee ID:  
+[2025-08-07 23:20:28] [INFO   ] USER INPUT: 2324 
+[2025-08-07 23:20:28] [INFO   ] Enter Address:  
+[2025-08-07 23:20:30] [INFO   ] USER INPUT: 129120 
+[2025-08-07 23:20:30] [INFO   ] Enter Mail ID:  
+[2025-08-07 23:20:32] [INFO   ] USER INPUT: odeioid 
+[2025-08-07 23:20:32] [INFO   ] Enter Mobile No:  
+[2025-08-07 23:20:33] [INFO   ] USER INPUT: 2930239 
+[2025-08-07 23:20:33] [INFO   ] Enter Basic Pay (e.g., 60000):  
+[2025-08-07 23:20:35] [INFO   ] USER INPUT: 190291.0 
+[2025-08-07 23:20:35] [INFO   ] -> Employee 'Pedro Neto' added successfully. 
+[2025-08-07 23:20:35] [INFO   ] 
+Choose Employee Type to Add: 
+[2025-08-07 23:20:35] [INFO   ] 1. Programmer 
+[2025-08-07 23:20:35] [INFO   ] 2. Assistant Professor 
+[2025-08-07 23:20:35] [INFO   ] 3. Associate Professor 
+[2025-08-07 23:20:35] [INFO   ] 4. Professor 
+[2025-08-07 23:20:35] [INFO   ] 5. Finish and Generate Pay Slips 
+[2025-08-07 23:20:35] [INFO   ] Enter your choice:  
+[2025-08-07 23:20:37] [INFO   ] USER INPUT: 3 (Associate Professor) 
+[2025-08-07 23:20:37] [INFO   ] 
+Enter details for the Associate Professor: 
+[2025-08-07 23:20:37] [INFO   ] Enter Name:  
+[2025-08-07 23:20:52] [INFO   ] USER INPUT: Enzo Fernandez 
+[2025-08-07 23:20:52] [INFO   ] Enter Employee ID:  
+[2025-08-07 23:20:55] [INFO   ] USER INPUT: 2 
+[2025-08-07 23:20:55] [INFO   ] Enter Address:  
+[2025-08-07 23:20:56] [INFO   ] USER INPUT: 1212 
+[2025-08-07 23:20:56] [INFO   ] Enter Mail ID:  
+[2025-08-07 23:20:58] [INFO   ] USER INPUT: esjkdi 
+[2025-08-07 23:20:58] [INFO   ] Enter Mobile No:  
+[2025-08-07 23:21:00] [INFO   ] USER INPUT: 2191029 
+[2025-08-07 23:21:00] [INFO   ] Enter Basic Pay (e.g., 60000):  
+[2025-08-07 23:21:02] [INFO   ] USER INPUT: 1.2900129E7 
+[2025-08-07 23:21:02] [INFO   ] -> Employee 'Enzo Fernandez' added successfully. 
+[2025-08-07 23:21:02] [INFO   ] 
+Choose Employee Type to Add: 
+[2025-08-07 23:21:02] [INFO   ] 1. Programmer 
+[2025-08-07 23:21:02] [INFO   ] 2. Assistant Professor 
+[2025-08-07 23:21:02] [INFO   ] 3. Associate Professor 
+[2025-08-07 23:21:02] [INFO   ] 4. Professor 
+[2025-08-07 23:21:02] [INFO   ] 5. Finish and Generate Pay Slips 
+[2025-08-07 23:21:02] [INFO   ] Enter your choice:  
+[2025-08-07 23:21:04] [INFO   ] USER INPUT: 4 (Professor) 
+[2025-08-07 23:21:04] [INFO   ] 
+Enter details for the Professor: 
+[2025-08-07 23:21:04] [INFO   ] Enter Name:  
+[2025-08-07 23:21:06] [INFO   ] USER INPUT: Cole Palmer 
+[2025-08-07 23:21:06] [INFO   ] Enter Employee ID:  
+[2025-08-07 23:21:07] [INFO   ] USER INPUT: 1 
+[2025-08-07 23:21:07] [INFO   ] Enter Address:  
+[2025-08-07 23:21:08] [INFO   ] USER INPUT: 1 
+[2025-08-07 23:21:08] [INFO   ] Enter Mail ID:  
+[2025-08-07 23:21:09] [INFO   ] USER INPUT: 1 
+[2025-08-07 23:21:09] [INFO   ] Enter Mobile No:  
+[2025-08-07 23:21:09] [INFO   ] USER INPUT: 1 
+[2025-08-07 23:21:09] [INFO   ] Enter Basic Pay (e.g., 60000):  
+[2025-08-07 23:21:11] [INFO   ] USER INPUT: 1.02910291209102E14 
+[2025-08-07 23:21:11] [INFO   ] -> Employee 'Cole Palmer' added successfully. 
+[2025-08-07 23:21:11] [INFO   ] 
+Choose Employee Type to Add: 
+[2025-08-07 23:21:11] [INFO   ] 1. Programmer 
+[2025-08-07 23:21:11] [INFO   ] 2. Assistant Professor 
+[2025-08-07 23:21:11] [INFO   ] 3. Associate Professor 
+[2025-08-07 23:21:11] [INFO   ] 4. Professor 
+[2025-08-07 23:21:11] [INFO   ] 5. Finish and Generate Pay Slips 
+[2025-08-07 23:21:11] [INFO   ] Enter your choice:  
+[2025-08-07 23:21:13] [INFO   ] USER INPUT: 5 (Finish) 
+[2025-08-07 23:21:13] [INFO   ] 
+--- Generating Pay Slips for All Employees --- 
+[2025-08-07 23:21:13] [INFO   ] 
+----------------------------------------- 
+[2025-08-07 23:21:13] [INFO   ] Employee Name: John Durairaj 
+[2025-08-07 23:21:13] [INFO   ] Employee ID: 2981 
+[2025-08-07 23:21:13] [INFO   ] Address: Wallahi 
+[2025-08-07 23:21:13] [INFO   ] Mail ID: 920390239@sdkj.com 
+[2025-08-07 23:21:13] [INFO   ] Mobile No: 28392389283 
+[2025-08-07 23:21:13] [INFO   ] Designation: Professor
+Basic Pay: $9,248,982.00
+Gross Salary: $19,145,392.74
+Net Salary: $18,026,265.92
+ 
+[2025-08-07 23:21:13] [INFO   ] ----------------------------------------- 
+[2025-08-07 23:21:13] [INFO   ] 
+----------------------------------------- 
+[2025-08-07 23:21:13] [INFO   ] Employee Name: Pedro Neto 
+[2025-08-07 23:21:13] [INFO   ] Employee ID: 2324 
+[2025-08-07 23:21:13] [INFO   ] Address: 129120 
+[2025-08-07 23:21:13] [INFO   ] Mail ID: odeioid 
+[2025-08-07 23:21:13] [INFO   ] Mobile No: 2930239 
+[2025-08-07 23:21:13] [INFO   ] Designation: Assistant Professor
+Basic Pay: $190,291.00
+Gross Salary: $393,902.37
+Net Salary: $370,877.16
+ 
+[2025-08-07 23:21:13] [INFO   ] ----------------------------------------- 
+[2025-08-07 23:21:13] [INFO   ] 
+----------------------------------------- 
+[2025-08-07 23:21:13] [INFO   ] Employee Name: Enzo Fernandez 
+[2025-08-07 23:21:13] [INFO   ] Employee ID: 2 
+[2025-08-07 23:21:13] [INFO   ] Address: 1212 
+[2025-08-07 23:21:13] [INFO   ] Mail ID: esjkdi 
+[2025-08-07 23:21:13] [INFO   ] Mobile No: 2191029 
+[2025-08-07 23:21:13] [INFO   ] Designation: Associate Professor
+Basic Pay: $12,900,129.00
+Gross Salary: $26,703,267.03
+Net Salary: $25,142,351.42
+ 
+[2025-08-07 23:21:13] [INFO   ] ----------------------------------------- 
+[2025-08-07 23:21:13] [INFO   ] 
+----------------------------------------- 
+[2025-08-07 23:21:13] [INFO   ] Employee Name: Cole Palmer 
+[2025-08-07 23:21:13] [INFO   ] Employee ID: 1 
+[2025-08-07 23:21:13] [INFO   ] Address: 1 
+[2025-08-07 23:21:13] [INFO   ] Mail ID: 1 
+[2025-08-07 23:21:13] [INFO   ] Mobile No: 1 
+[2025-08-07 23:21:13] [INFO   ] Designation: Professor
+Basic Pay: $102,910,291,209,102.00
+Gross Salary: $213,024,302,802,841.12
+Net Salary: $200,572,157,566,539.78
+ 
+[2025-08-07 23:21:13] [INFO   ] ----------------------------------------- 
+[2025-08-07 23:21:13] [INFO   ] 
+--- Process Complete. Full transcript saved to user_session.log --- 
