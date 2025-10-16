@@ -1,0 +1,202 @@
+import java.io.FileWriter;
+import java.io.OutputStream;
+import java.io.PrintStream;
+import java.io.PrintWriter;
+import java.util.Random;
+
+/**
+ * The shared resource class that manages the number and coordinates threads.
+ * This acts as the monitor for synchronization.
+ */
+class NumberManager {
+    private int number;
+    private boolean isNumberReady = false;
+    private PrintWriter log;
+
+    public NumberManager(PrintWriter log) {
+        this.log = log;
+    }
+
+    // This method is called by the producer (Generator thread).
+    public synchronized void generateNumber() {
+        // Wait until the previous number has been consumed.
+        while (isNumberReady) {
+            try {
+                wait();
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            }
+        }
+        
+        this.number = new Random().nextInt(100); // Generate a number between 0 and 99
+        System.out.println("Generator produced: " + this.number);
+        log.println("PRODUCER: Generated " + this.number);
+        
+        this.isNumberReady = true;
+        
+        // Notify both consumer threads that a new number is ready.
+        notifyAll();
+    }
+
+    // This method is called by the SquareCalculator thread.
+    public synchronized void calculateSquare() {
+        // Wait until a new number is ready.
+        while (!isNumberReady) {
+            try {
+                wait();
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            }
+        }
+
+        // Only act if the number is even.
+        if (number % 2 == 0) {
+            long square = (long) number * number;
+            System.out.println("SquareCalculator: The square of " + number + " is " + square);
+            log.println("CONSUMER_EVEN: Calculated square of " + number + " is " + square);
+            this.isNumberReady = false; // Mark number as consumed.
+            notifyAll(); // Notify the producer it can generate a new number.
+        }
+    }
+
+    // This method is called by the CubeCalculator thread.
+    public synchronized void calculateCube() {
+        // Wait until a new number is ready.
+        while (!isNumberReady) {
+            try {
+                wait();
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            }
+        }
+        
+        // Only act if the number is odd.
+        if (number % 2 != 0) {
+            long cube = (long) number * number * number;
+            System.out.println("CubeCalculator: The cube of " + number + " is " + cube);
+            log.println("CONSUMER_ODD: Calculated cube of " + number + " is " + cube);
+            this.isNumberReady = false; // Mark number as consumed.
+            notifyAll(); // Notify the producer it can generate a new number.
+        }
+    }
+}
+
+/**
+ * The first thread's logic: generates a random number every second.
+ */
+class Generator implements Runnable {
+    private NumberManager manager;
+
+    public Generator(NumberManager manager) {
+        this.manager = manager;
+    }
+
+    @Override
+    public void run() {
+        try {
+            while (!Thread.currentThread().isInterrupted()) {
+                manager.generateNumber();
+                Thread.sleep(1000); // Wait for 1 second
+            }
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
+    }
+}
+
+/**
+ * The second thread's logic: computes squares for even numbers.
+ */
+class SquareCalculator implements Runnable {
+    private NumberManager manager;
+
+    public SquareCalculator(NumberManager manager) {
+        this.manager = manager;
+    }
+
+    @Override
+    public void run() {
+        while (!Thread.currentThread().isInterrupted()) {
+            manager.calculateSquare();
+        }
+    }
+}
+
+/**
+ * The third thread's logic: computes cubes for odd numbers.
+ */
+class CubeCalculator implements Runnable {
+    private NumberManager manager;
+
+    public CubeCalculator(NumberManager manager) {
+        this.manager = manager;
+    }
+
+    @Override
+    public void run() {
+        while (!Thread.currentThread().isInterrupted()) {
+            manager.calculateCube();
+        }
+    }
+}
+
+/**
+ * The main class to set up and run the application.
+ */
+public class MultiThreadMain {
+    public static void main(String[] args) throws Exception {
+        // --- Logger Setup ---
+        FileWriter fw = new FileWriter("multithread_log.txt", true);
+        PrintWriter log = new PrintWriter(fw, true);
+        PrintStream originalOut = System.out;
+        PrintStream logOut = new PrintStream(new OutputStream() {
+            public void write(int b) {
+                originalOut.write(b);
+                log.write(b);
+            }
+        });
+        System.setOut(logOut);
+        // --- End Logger Setup ---
+
+        log.println("LOG: Application starting...");
+
+        NumberManager manager = new NumberManager(log);
+
+        // Create the runnable tasks
+        Generator generatorTask = new Generator(manager);
+        SquareCalculator squareTask = new SquareCalculator(manager);
+        CubeCalculator cubeTask = new CubeCalculator(manager);
+
+        // Create the threads
+        Thread generatorThread = new Thread(generatorTask, "Generator");
+        Thread squareThread = new Thread(squareTask, "SquareCalculator");
+        Thread cubeThread = new Thread(cubeTask, "CubeCalculator");
+
+        // Start the threads
+        generatorThread.start();
+        log.println("LOG: Started Generator thread.");
+        squareThread.start();
+        log.println("LOG: Started SquareCalculator thread.");
+cubeThread.start();
+        log.println("LOG: Started CubeCalculator thread.");
+
+        // Let the application run for a certain amount of time (e.g., 10 seconds)
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            // This is unlikely to happen here, but good practice to handle it.
+        }
+
+        // Stop the threads gracefully
+        generatorThread.interrupt();
+        squareThread.interrupt();
+        cubeThread.interrupt();
+        
+        System.out.println("\nApplication shutting down after 10 seconds.");
+        log.println("LOG: Application shutting down.");
+        
+        // --- Cleanup ---
+        log.close();
+        System.setOut(originalOut);
+    }
+}
