@@ -1,6 +1,8 @@
+
+import java.io.File;
 class CheckFileReadable {
     public static void main(String[] args) {
-        String filePath = "converter_log.txt";
+        String filePath = "example.txt";
         
         File file = new File(filePath);
         
